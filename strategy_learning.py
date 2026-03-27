@@ -14,7 +14,7 @@ def config():
     config.add_argument("--epochs", type=int, default=15)             
     config.add_argument("--cycle", type=int, default=3)               
     config.add_argument("--max_len", type=int, default=3000)
-    config.add_argument("--request", type=str, default="./request/salad_bench.json")  
+    config.add_argument("--request", type=str, default="./request/salad.json")  
     config.add_argument("--dataset", type=str, default="salad")     
     config.add_argument("--use_pre_strategy", action="store_true")  
 
