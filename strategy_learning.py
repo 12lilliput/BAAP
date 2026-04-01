@@ -113,7 +113,7 @@ if __name__ == "__main__":
                 logger.info(f"### response is... \n{response_prompt}")
             
                 harmful_words = search_harmful(goal, response_prompt, args.lang)
-                logger.info(f"### search harmful is... {harmful_words}")
+                logger.info(f"### search harmful... {harmful_words}")
 
             
                 reason, rating = evaluate_model.evaluate(goal, main_strategy, response_prompt, harmful_words)
@@ -143,7 +143,7 @@ if __name__ == "__main__":
                     logger.info(f"### make new strategy...  {new_key}")
                     if rating > 6:  
                         harmless_prompt = analyzer_model.paraphrasing(adversarial_prompt)   
-                        logger.info(f"### This time, the harmless prompt is...  {harmless_prompt}")
+                        logger.info(f"### the harmless prompt...  {harmless_prompt}")
                         new_rule = rule 
                         for p in range(3):  
                             new_rule = analyzer_model.make_rule(goal, adversarial_prompt, harmless_prompt, new_rule)  
@@ -161,7 +161,7 @@ if __name__ == "__main__":
                         logger.info(f"### update strategy... {update_key}.    and remove... {find_key}")
                         if rating > 6:  
                             harmless_prompt = analyzer_model.paraphrasing(adversarial_prompt)  
-                            logger.info(f"### This time, the harmless prompt is...  {harmless_prompt}")
+                            logger.info(f"### the harmless prompt...  {harmless_prompt}")
                             update_rule = rule   
                             for p in range(3):  
                                 update_rule = analyzer_model.make_rule(goal, adversarial_prompt, harmless_prompt, update_rule) 
@@ -197,7 +197,7 @@ if __name__ == "__main__":
                         rule = strategy_json[main_key]['rule']  
                         sub_strategy = sub_key  
                     logger.info(f"### next strategy... {main_strategy}")
-                    logger.info(f"### next rule is... {rule}")
+                    logger.info(f"### next rule... {rule}")
                     logger.info(f"### next sub strategy... {sub_strategy}")
 
 
