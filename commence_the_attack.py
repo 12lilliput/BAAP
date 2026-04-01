@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
             if permit is True and permit2 is True and i+extra_count < args.epochs:
                 if rating < strategy_library[main_strategy]['score']:    
-                    logger.info(f"######  using the past adversarial prompt  ######")
+                    logger.info(f"######  using previous adversarial prompt  ######")
                     extra_count += 1
                     adversarial_prompt = strategy_library[main_strategy]['adv_prompt']   ### case-1
                     response_prompt = target_model.generate(sys_prompt, adversarial_prompt)
