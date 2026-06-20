@@ -28,7 +28,6 @@ python commence_the_attack.py --gemini_key <your_key>
 ```
 
 ## Arguments
-
 - '--lang': Language option. Supports 'en' and 'ko'.
 - '--epochs': Number of optimization epochs. Recommended range is 15–20.
 - '--cycle': Number of cycles per epoch.
