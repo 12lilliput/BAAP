@@ -21,7 +21,7 @@ BAAP operates in two main steps:
 python strategy_learning.py --gemini_key <your_key>
 ```
 
-### 2. Launch the Attack
+### 2. Run BAAP Probing
 
 ```bash
 python commence_the_attack.py --gemini_key <your_key>
@@ -37,3 +37,9 @@ python commence_the_attack.py --gemini_key <your_key>
 - '--openai_key': Your OpenAI API key for embedding.
 - '--embedded_model': Embedding model. Default is 'text-embedding-ada-002'.
 - 'target_model': Target model specified by the user.
+
+
+## Ethical Notice
+This repository is intended to support LLM vulnerability management, red-teaming, and defensive threat intelligence research.
+To promote transparency and reproducibility, we release the core components of BAAP. However, to reduce the risk of misuse, specific harmful prompts and sensitive content are not included.
+Please use this repository only for responsible security research and the development of safer LLM systems.
