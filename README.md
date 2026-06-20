@@ -29,12 +29,12 @@ python commence_the_attack.py --gemini_key <your_key>
 
 ## Arguments
 
---lang: Language option. Supports en and ko. Default is en.
---epochs: Number of optimization epochs. Recommended range is 15–20. Default is 15.
---cycle: Number of cycles per epoch. Default is 3.
---dataset: Benchmark dataset. Supports advbench and salad. Default is salad.
---gemini: Attacker model. Default is gemini-2.0-flash.
---gemini_key: Your Gemini API key.
---openai_key: Your OpenAI API key for embedding.
---embedded_model: Embedding model. Default is text-embedding-ada-002.
---target_model: Target model specified by the user.
+- '--lang': Language option. Supports 'en' and 'ko'.
+- '--epochs': Number of optimization epochs. Recommended range is 15–20.
+- '--cycle': Number of cycles per epoch.
+- '--dataset': Benchmark dataset. Supports 'advbench' and 'salad'.
+- '--gemini': Attacker model. Default is 'gemini-2.0-flash'.
+- '--gemini_key': Your Gemini API key.
+- '--openai_key': Your OpenAI API key for embedding.
+- '--embedded_model': Embedding model. Default is 'text-embedding-ada-002'.
+- 'target_model': Target model specified by the user.
