@@ -1,4 +1,15 @@
 # BAAP
+Benign-Appearing Adversarial Prompting for LLM Vulnerability Mining
+
+BAAP is a research framework for automated LLM red-teaming and vulnerability analysis.
+It generates benign-appearing adversarial prompts, evaluates target model responses, and mines reusable strategies for LLM threat intelligence.
+
+## Key Features
+- Automated adversarial probing for LLM vulnerability discovery
+- Benign-appearing camouflage strategy generation
+- Fine-grained LLM-based evaluation with domain-specific harmful-term retrieval
+- Strategy mining and reuse for scalable LLM threat intelligence
+
 
 ## Usage
 
